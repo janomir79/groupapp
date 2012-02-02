@@ -6,9 +6,12 @@ Bundler.require
 class Groupapp < Sinatra::Base
 
 	set :public, 'public'
+	set :views, 'views'
+
+	get '/main.css' do scss :main; end
 
 	get '/' do
-		"This is groupapp.opalab.com"
+		haml :landing_page
 	end
 
 end
