@@ -9,6 +9,14 @@ require 'mongoid'
 
 class Groupapp < Sinatra::Base
 
+	configure [:development, :test] do
+		Mongoid.logger = Logger.new($stdout)
+	end
+
+	configure :production do
+		Mongoid.logger=Logger.new('/dev/null')
+	end	
+
 	configure do
 		Mongoid.load!("config/mongoid.yml")
 	end

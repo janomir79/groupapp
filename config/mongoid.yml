@@ -1,10 +1,10 @@
 development:
   host: localhost
-  database: groupapp
+  database: groupapp_dev
 
 test:
   host: localhost
-  database: groupapp
+  database: groupapp_test
 
 production:
   uri: <%= ENV['MONGOURL'] %>
