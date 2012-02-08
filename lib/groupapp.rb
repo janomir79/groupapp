@@ -24,7 +24,9 @@ class Groupapp < Sinatra::Base
 	get '/auth/:name/callback' do
 		auth = request.env['omniauth.auth']
 
-		auth.to_json
+		# auth.to_json
+
+		JSON.pretty_generate(auth)
 	end
 
 	get '/testout' do
