@@ -21,7 +21,7 @@ class Groupapp < Sinatra::Base
 		haml :landing_page
 	end
 
-	post '/auth/:name/callback' do
+	get '/auth/:name/callback' do
 		auth = request.env['omniauth.auth']
 
 		auth.to_json
