@@ -5,7 +5,8 @@ Bundler.require
 
 require 'json'
 require 'mongoid'
-
+require './models/user'
+require './models/group'
 
 class Groupapp < Sinatra::Base
 
@@ -22,26 +23,14 @@ class Groupapp < Sinatra::Base
 
 	set :views, 'views'
 
+	# The magic ;)
+
 	get '/main.css' do scss :main; end
 	get '/' do haml :landing_page; end
 
 	get '/auth/:name/callback' do
 		auth = request.env['omniauth.auth']
 		JSON.pretty_generate(auth)
-	end
-
-	get '/env' do
-		if development?
-			return "development"
-		end
-
-		if test?
-			return "test"
-		end
-	
-		if production?
-			return "production"
-		end
 	end
 
 end

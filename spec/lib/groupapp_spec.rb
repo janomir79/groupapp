@@ -13,9 +13,4 @@ describe Groupapp do
 		last_response.should be_ok
 	end
 
-	it "is test env '/env'" do
-		get '/env'
-		last_response.body.should match /test/
-	end
-
 end

@@ -2,7 +2,6 @@
 
 require File.join(File.dirname(__FILE__), '..', 'lib/groupapp.rb')
 
-
 #require 'sinatra'
 require 'rspec'
 require 'rack/test'
