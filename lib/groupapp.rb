@@ -10,7 +10,10 @@ class Groupapp < Sinatra::Base
 
 	use Rack::Session::Cookie
 	use OmniAuth::Builder do
-		provider :facebook, ENV['GROUPAPP_FB_KEY'], ENV['GROUPAPP_FB_SECRET']
+		provider :facebook,
+			ENV['GROUPAPP_FB_KEY'],
+			ENV['GROUPAPP_FB_SECRET'],
+			{scope: 'user_groups'}
 	end
 
 	set :views, 'views'
