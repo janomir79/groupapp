@@ -1,10 +1,17 @@
 # By Oto Brglez - <oto.brglez@opalab.com> 
 
 require 'bundler'
-require 'json'
 Bundler.require
 
+require 'json'
+require 'mongoid'
+
+
 class Groupapp < Sinatra::Base
+
+	configure do
+		Mongoid.load!("config/mongoid.yml")
+	end
 
 	use Rack::Session::Cookie
 	use OmniAuth::Builder do
@@ -21,6 +28,20 @@ class Groupapp < Sinatra::Base
 	get '/auth/:name/callback' do
 		auth = request.env['omniauth.auth']
 		JSON.pretty_generate(auth)
+	end
+
+	get '/env' do
+		if development?
+			return "development"
+		end
+
+		if test?
+			return "test"
+		end
+	
+		if production?
+			return "production"
+		end
 	end
 
 end

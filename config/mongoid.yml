@@ -1,0 +1,10 @@
+development:
+  host: localhost
+  database: groupapp
+
+test:
+  host: localhost
+  database: groupapp
+
+production:
+  uri: <%= ENV['MONGOURL'] %>
