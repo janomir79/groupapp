@@ -4,7 +4,7 @@ require 'bundler'
 require 'json'
 Bundler.require
 
-# OmniAuth.config.full_host = "http://localhost:9393/" #"http://groupapp.dev:9393/"
+OmniAuth.config.full_host = "http://groupapp.opalab.com"
 
 class Groupapp < Sinatra::Base
 
