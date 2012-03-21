@@ -2,6 +2,7 @@
 %html
 	%meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
 	%link(href="/main.css" media="all" rel="stylesheet" type="text/css")
+	%link(href="http://fonts.googleapis.com/css?family=Cabin Condensed|Cuprum|Cookie" rel="stylesheet" type="text/css")
 	%meta(charset="utf-8")
 	%meta(content="IE=edge,chrome=1" http-equiv="X-UA-Compatible")
 	%meta(name="description" content="Make your FB group awsome again ;)")
@@ -19,16 +20,16 @@
 		#top
 			#logo			
 				#menu
-				.wrapper
-					%a(href="/")Layout
-					%a(href="/")Post
-					%a(href="/")Settings
+					.pos
+						%a(href="/")Layout
+						%a(href="/")Post
+						%a(href="/")Settings
 			#user 
 				%img(src="/images/user/jan.jpg")
 				%p.name Jan Domiter
 				%p
-					%a(href="/")Settings
-					%a(href="/")Signout			
+				%a(href="/")Settings
+				%a(href="/")Signout			
 		
 		= yield		
 		
@@ -37,7 +38,10 @@
 		.content
 			#follow
 				%h1 Follow us
-				%img(src="/images/groupapp/facebook.png") %img(src="/images/groupapp/twitter.png") %img(src="/images/groupapp/rss.png")				
+				%img(src="/images/groupapp/facebook.png") 
+				%img(src="/images/groupapp/twitter.png") 
+				%img(src="/images/groupapp/rss.png")				
 		
 			%p.contact phone: +386(0)40801242 | email: %a(href="/")jan@domiter.org
+			
 			%p.address Spletne storitve domiter, Jan Domiter s.p., Grajski trg 14 2327 Rače	

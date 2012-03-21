@@ -21,6 +21,7 @@ class Groupapp < Sinatra::Base
 			{ scope: 'user_groups'}
 	end
 
+	set :public, "public"
 	set :views, 'views'
 
 	# The magic ;)

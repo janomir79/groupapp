@@ -43,7 +43,7 @@ html, body {
 #user p.name {
 	font-family: Arial;
 	font-size: 20px;
-	color: #99e1f6;
+	color: #99e1f6;	
 }
 
 #user p {
@@ -78,7 +78,7 @@ html, body {
 /* -- groupapp menu -- */
 #menu {
 	margin-top:4px;
-	width: 250px;
+	width: 350px;
 	height: 45px;
 	float: left;
 }
@@ -102,9 +102,11 @@ html, body {
 	color: #99e1f6;
 }
 
-#menu .wrapper {
+#menu .pos {
+	/*margin-top: 10px;*/
+	/*margin-left: 20px;*/
+	margin-left: 160px;
 	margin-top: 10px;
-	margin-left: 20px;
 }
 
  /* -- end -- */
