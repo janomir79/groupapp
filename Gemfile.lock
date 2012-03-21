@@ -62,6 +62,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   bson_ext (~> 1.5)

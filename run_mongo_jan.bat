@@ -1,0 +1,1 @@
+C:\mongo\mongodb-win32-x86_64-2.0.2\bin\mongod.exe --dbpath C:\Users\Majster79\RubyProjects\groupapp\db --rest

@@ -13,14 +13,31 @@
 		%title groupapp - Page from you Facebook Group.
 
 	%body
-		.main-wrap
-			.header
-				%a.org_btn.logo(href="/") groupapp
-
-			.main
-				=yield
-
-			.footer
+	#wrapper
+	
+		/ groupapp header
+		#top
+			#logo			
+				#menu
+				.wrapper
+					%a(href="/")Layout
+					%a(href="/")Post
+					%a(href="/")Settings
+			#user 
+				%img(src="/images/user/jan.jpg")
+				%p.name Jan Domiter
 				%p
-					This is just experiment. 
-					%a(href="http://twitter.com/otobrglez") @otobrglez
+					%a(href="/")Settings
+					%a(href="/")Signout			
+		
+		= yield		
+		
+	/ footer
+	#footer
+		.content
+			#follow
+				%h1 Follow us
+				%img(src="/images/groupapp/facebook.png") %img(src="/images/groupapp/twitter.png") %img(src="/images/groupapp/rss.png")				
+		
+			%p.contact phone: +386(0)40801242 | email: %a(href="/")jan@domiter.org
+			%p.address Spletne storitve domiter, Jan Domiter s.p., Grajski trg 14 2327 Rače	

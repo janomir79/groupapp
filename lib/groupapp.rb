@@ -33,4 +33,8 @@ class Groupapp < Sinatra::Base
 		JSON.pretty_generate(auth)
 	end
 
+	get '/pozdrav/:ime' do
+		"Zdravo #{params[:ime]}"
+	end
+	
 end

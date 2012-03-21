@@ -1,0 +1,96 @@
+/* By Oto Brglez - <oto.brglez@opalab.com> */
+/* Color: http://www.colourlovers.com/business/trends/branding/7883/Delicious_Logo */
+
+body,td,th,p{
+	font-family:helvetica, sans-serif;
+	font-size:16px;
+}
+
+body,html{
+	margin:0;
+	padding:0;
+	padding:5px;
+	background-color:#F2EEEA;
+	
+	//background-color:red;
+}
+
+a{
+	color:#E24A37;
+	text-decoration:none;
+}
+
+a:hover{
+	color:#E87162;
+}
+
+a.org_btn{
+	height:40px;
+	line-height:40px;
+	display:inline-block;
+	padding-left:10px;
+	padding-right:10px;
+	background-color:#E24A37;
+	color:white;
+	font-size:24px;	
+}
+
+
+a.org_btn:hover{
+	background-color:#E87162;
+	color:white;
+}
+
+body{
+	text-align:center
+}
+
+div.main-wrap{
+	text-align:left;
+	max-width:600px;
+	margin:0 auto;
+}
+
+h1,h2,h3,p{
+	margin:0;
+	padding:0;
+	margin-bottom:10px;
+}
+
+a.logo{
+	margin-bottom:10px;
+}
+
+
+div.main{
+	min-height:400px;
+}
+
+div.footer{
+	padding-top:10px;
+	border-top:1px solid #B4B2AE;
+	text-align:right;
+}
+
+.langing_page{
+	ol,li{
+		list-style:none;
+		margin:0;
+		padding:0;
+	}
+
+	li{
+		font-size:26px;
+		line-height:30px;
+		text-align:center;
+
+		a.make_it{
+			margin-top:50px;
+		}
+	}
+
+	ol{
+		margin-top:100px;
+		display:block;
+	}
+}
